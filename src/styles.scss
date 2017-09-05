@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+@import '~material-design-icons/iconfont/material-icons.css';
+@include mat-core();
+
+@import './app/app';
+
+$primary: mat-palette($mat-blue);
+$accent:  mat-palette($mat-amber);
+$warn:    mat-palette($mat-red);
+
+@include angular-material-theme(mat-light-theme($primary, $accent, $warn));
+
+.mat-drawer-container {
+  background: white;
+}
