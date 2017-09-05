@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MdToolbarModule, MdSidenavModule } from '@angular/material';
+import { TreeModule } from 'angular-tree-component';
 import 'hammerjs';
 
 import { AppComponent } from './app';
@@ -18,7 +19,8 @@ import { AppComponent } from './app';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MdToolbarModule,
-    MdSidenavModule
+    MdSidenavModule,
+    TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
