@@ -3,7 +3,11 @@
   <div fxLayout="row" fxFlex>
     <md-sidenav-container class="mat-elevation-z4" fxFlex="20">
       <md-sidenav mode="side" opened="true" fxLayout="column">
-        <tree-root [focused]="true" [nodes]="nodes" fxFlex></tree-root>
+        <tree-root [focused]="true" [nodes]="nodes" fxFlex>
+          <ng-template #treeNodeTemplate let-node let-index="index">
+            <button md-button>{{ node.data.name }}</button>
+          </ng-template>
+        </tree-root>
       </md-sidenav>
     </md-sidenav-container>
     <div fxFlex="80">test</div>
